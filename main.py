@@ -59,12 +59,12 @@ photozip = 'https://envs.sh/cD_.jpg'
 
 
 # Inline keyboard for start command
-BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/Rana_jii_27_bot")]])
+BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/inventor_king_09")]])
 keyboard = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="🛠️ Chanel", url="https://t.me/+mtblAmsd8WA2MTll"),
-            InlineKeyboardButton(text="🛠️ help", url="https://t.me/Rana_jii_27_bot"),
+            InlineKeyboardButton(text="🛠️ Chanel", url="https://t.me/+RZDBATzxxTgxMDZl"),
+            InlineKeyboardButton(text="🛠️ help", url="https://t.me/inventor_king_09"),
         ],
     ]
 )
@@ -332,7 +332,7 @@ async def start(bot, m: Message):
             f"🌟 Welcome {m.from_user.first_name}! 🌟\n\n" +
             f"Great! You are a premium member!\n"
             f"Use Command : /help to get started 🌟\n\n"
-            f"If you face any problem contact -  [𝐑𝐀𝐍𝐀 𝐉𝐈𝐈](https://t.me/Rana_jii_27_bot)\n", disable_web_page_preview=True, reply_markup=BUTTONSCONTACT
+            f"If you face any problem contact -  [@inventor_king_09](https://t.me/inventor_king_09)\n", disable_web_page_preview=True, reply_markup=BUTTONSCONTACT
         )
     else:
         await asyncio.sleep(2)
@@ -418,7 +418,7 @@ async def txt_handler(client: Client, m: Message):
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n" 
         f"📌 𝗠𝗮𝗶𝗻 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀:\n\n"  
         f"➥ /start – Bot Status Check\n"
-        f"➥ /drm – Extract from .txt (Auto)\n"
+        f"➥ /mk – Extract from .txt (Auto)\n"
         f"➥ /y2t – YouTube → .txt Converter\n"  
         f"➥ /t2t – Text → .txt Generator\n" 
         f"➥ /stop – Cancel Running Task\n"
@@ -438,7 +438,7 @@ async def txt_handler(client: Client, m: Message):
         f"• Send any link for auto-extraction\n"  
         f"• Supports batch processing\n\n"  
         f"╭────────⊰◆⊱────────╮\n"   
-        f" ➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 : @Rana_bots 💻\n"
+        f" ➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 : manish 💻\n"
         f"╰────────⊰◆⊱────────╯\n"
         )
     )   
@@ -453,7 +453,7 @@ async def send_logs(client: Client, m: Message):  # Correct parameter name
     except Exception as e:
         await m.reply_text(f"Error sending logs: {e}")
 
-@bot.on_message(filters.command(["drm"]) )
+@bot.on_message(filters.command(["mk"]) )
 async def txt_handler(bot: Client, m: Message):  
     editable = await m.reply_text(f"__Hii, I am txt Downloader Bot__\n\n<i>Send Me Your txt file which enclude Name with url...\nE.g: Name: Link</i>")
     input: Message = await bot.listen(editable.chat.id)
@@ -544,7 +544,7 @@ async def txt_handler(bot: Client, m: Message):
     raw_text4 = input4.text
     await input4.delete(True)
 
-    await editable.edit(f"Send the Video Thumb URL\nSend /d for use default\n\nYou can direct upload thumb\nSend **No** for use default")
+    await editable.edit(f"Send the Video Thumb URL\nSend /d for use default\n\nYou can direct upload thumb\nSend **no** for use default")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
