@@ -59,12 +59,12 @@ photozip = 'https://envs.sh/cD_.jpg'
 
 
 # Inline keyboard for start command
-BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/inventor_king_09")]])
+BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/DOCTOR_JB")]])
 keyboard = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(text="🛠️ Chanel", url="https://t.me/+RZDBATzxxTgxMDZl"),
-            InlineKeyboardButton(text="🛠️ help", url="https://t.me/inventor_king_09"),
+            InlineKeyboardButton(text="🛠️ help", url="https://t.me/DOCTOR_JB"),
         ],
     ]
 )
@@ -332,7 +332,7 @@ async def start(bot, m: Message):
             f"🌟 Welcome {m.from_user.first_name}! 🌟\n\n" +
             f"Great! You are a premium member!\n"
             f"Use Command : /help to get started 🌟\n\n"
-            f"If you face any problem contact -  [@inventor_king_09](https://t.me/inventor_king_09)\n", disable_web_page_preview=True, reply_markup=BUTTONSCONTACT
+            f"If you face any problem contact -  [@DOCTOR_JB](https://t.me/DOCTOR_JB)\n", disable_web_page_preview=True, reply_markup=BUTTONSCONTACT
         )
     else:
         await asyncio.sleep(2)
@@ -418,7 +418,7 @@ async def txt_handler(client: Client, m: Message):
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n" 
         f"📌 𝗠𝗮𝗶𝗻 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀:\n\n"  
         f"➥ /start – Bot Status Check\n"
-        f"➥ /mk – Extract from .txt (Auto)\n"
+        f"➥ /TEAM – Extract from .txt (Auto)\n"
         f"➥ /y2t – YouTube → .txt Converter\n"  
         f"➥ /t2t – Text → .txt Generator\n" 
         f"➥ /stop – Cancel Running Task\n"
@@ -453,7 +453,7 @@ async def send_logs(client: Client, m: Message):  # Correct parameter name
     except Exception as e:
         await m.reply_text(f"Error sending logs: {e}")
 
-@bot.on_message(filters.command(["mk"]) )
+@bot.on_message(filters.command(["TEAM"]) )
 async def txt_handler(bot: Client, m: Message):  
     editable = await m.reply_text(f"__Hii, I am txt Downloader Bot__\n\n<i>Send Me Your txt file which enclude Name with url...\nE.g: Name: Link</i>")
     input: Message = await bot.listen(editable.chat.id)
@@ -489,7 +489,7 @@ async def txt_handler(bot: Client, m: Message):
     
     await editable.edit(f"Total 🔗 links found are {len(links)}\nSend From where you want to download.initial is 1")
     if m.chat.id not in AUTH_USERS:
-        print(f"User ID not in AUTH_USERS", m.chat.id)
+        print(f"User ID not LLLLLin AUTH_USERS", m.chat.id)
         await bot.send_message(m.chat.id, f"__Oopss! You are not a Premium member __\n__PLEASE /upgrade YOUR PLAN__\n__Send me your user id for authorization__\n__Your User id__ - `{m.chat.id}`\n")
         return
     input0: Message = await bot.listen(editable.chat.id)
@@ -509,7 +509,7 @@ async def txt_handler(bot: Client, m: Message):
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     quality = f"{raw_text2}p"
-    await input2.delete(True)
+    await input2.delete(True)LLLL
     try:
         if raw_text2 == "144":
             res = "256x144"
