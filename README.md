@@ -1,6 +1,6 @@
 ![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+To+Txt+Uploader+Bot+!)
 
-***Welcome to DRM bot made by @Rana_jii4912 (Instagram)***
+***Welcome to DRM bot made by @DOCTOR_JB***
 
 **Don't Remove Credit tag**
 **Note:** CP DRM SUPPORTED MINIMUM QUALITY 360
@@ -34,8 +34,8 @@
 
 
 Rana bot :
-@@Rana_bots
+@DOCTOR_JBBOT
 
 
 Bot username
-@Rana_jii_27_bot
+@DOCTOR_JBBOT
