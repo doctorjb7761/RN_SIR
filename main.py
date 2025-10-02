@@ -509,7 +509,7 @@ async def txt_handler(bot: Client, m: Message):
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     quality = f"{raw_text2}p"
-    await input2.delete(True)LLLL
+    await input2.delete(True)
     try:
         if raw_text2 == "144":
             res = "256x144"
